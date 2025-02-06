@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/Ratatui048/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Ratatui048/frontend-project-44/actions)",
   "main": "index.js",
-  "type":"module",
-  "bin":{
+  "type": "module",
+  "bin": {
     "brain-games": "bin/brain-games.js"
   },
   "scripts": {
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Ratatui048/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/Ratatui048/frontend-project-44#readme"
+  "homepage": "https://github.com/Ratatui048/frontend-project-44#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
