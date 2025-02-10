@@ -22,6 +22,7 @@ function playGame() {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
+  console.log(`What number is missing in the progression?`);
   for (let i = 0; i < 3; i++) {
     const { progression, hiddenValue } = generateProgression();
     console.log(`Question: ${progression}`);
