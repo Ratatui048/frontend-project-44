@@ -6,7 +6,7 @@ function generateProgression() {
   const step = Math.floor(Math.random() * 5) + 1;
 
   const progression = [];
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < length; i += 1) {
     progression.push(start + i * step);
   }
 
@@ -15,15 +15,15 @@ function generateProgression() {
   progression[hiddenIndex] = '..';
   return {
     progression: progression.join(' '),
-    hiddenValue: hiddenValue
+    hiddenValue,
   };
 }
 function playGame() {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  console.log(`What number is missing in the progression?`);
-  for (let i = 0; i < 3; i++) {
+  console.log('What number is missing in the progression?');
+  for (let i = 0; i < 3; i += 1) {
     const { progression, hiddenValue } = generateProgression();
     console.log(`Question: ${progression}`);
     const userAnswer = parseInt(readlineSync.question('Your answer: '), 10);
@@ -39,4 +39,3 @@ function playGame() {
 }
 
 export default playGame;
-
